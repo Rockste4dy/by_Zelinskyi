@@ -1,0 +1,467 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>by Zelinskyi</title>
+
+    <link rel="icon" href="{% static 'favicon.png' %}" type="image/png">
+	<link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="img/x-icon">
+
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800italic,700italic,600italic,400italic,300italic,800,700,600' rel='stylesheet' type='text/css'>
+
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/responsive.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+	<link href="{% static 'css/animate.css' %}" rel="stylesheet" type="text/css">
+
+
+    <script type="text/javascript" src="{% static 'js/jquery.1.8.3.min.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery-scrolltofixed.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/jquery.isotope.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/wow.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/classie.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/magnific-popup.js' %}"></script>
+	<script src="{% static 'contactform/contactform.js' %}"></script>
+</head>
+
+<body>
+	<nav class="main-nav-outer" id="test">
+		<!--main-nav-start-->
+		<div class="container">
+			<ul class="main-nav">
+				<li><a href="{% url 'index' %}#service">Про компанію</a></li>
+                <li><a href="{% url 'shop' %}">Каталог</a></li>
+				<li class="small-logo"><a href="{% url 'index' %}"><img src="{% static 'img/small-logo.png' %}" alt=""></a></li>
+				<li><a href="{% url 'panels_page' %}">МДФ панелі</a></li>
+				<li><a href="{% url 'index' %}#contact">Контакти</a></li>
+
+
+			</ul>
+			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
+		</div>
+	</nav>
+    {% block navigation_footer %}
+    {% block main_content %}
+	<section class="main-section" id="service">
+		<!--main-section-start-->
+		<div class="container">
+			<h2>Services</h2>
+			<h6>We offer exceptional service with complimentary hugs.</h6>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 wow fadeInLeft delay-05s">
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-paw"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>branding &amp; identity</h3>
+							<p>Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-gear"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>web development</h3>
+							<p>Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-apple"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>mobile design</h3>
+							<p>Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.</p>
+						</div>
+					</div>
+					<div class="service-list">
+						<div class="service-list-col1">
+							<i class="fa fa-medkit"></i>
+						</div>
+						<div class="service-list-col2">
+							<h3>24/7 Support</h3>
+							<p>Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.</p>
+						</div>
+					</div>
+				</div>
+				<figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
+					<img src="{% static 'img/macbook-pro.png' %}" alt="">
+				</figure>
+
+			</div>
+		</div>
+	</section>
+	<!--main-section-end-->
+	<section class="main-section alabaster">
+		<!--main-section alabaster-start-->
+		<div class="container">
+			<div class="row">
+				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+					<img src="{% static 'img/iphone.png' %}" alt="">
+				</figure>
+				<div class="col-lg-7 col-sm-8 featured-work">
+					<h2>featured work</h2>
+					<P class="padding-b">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</P>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-02s">
+							<i class="fa fa-magic"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-02s">
+							<h3>magic of theme development</h3>
+							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-04s">
+							<i class="fa fa-gift"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-04s">
+							<h3>neatly packaged</h3>
+							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+						</div>
+					</div>
+					<div class="featured-box">
+						<div class="featured-box-col1 wow fadeInRight delay-06s">
+							<i class="fa fa-dashboard"></i>
+						</div>
+						<div class="featured-box-col2 wow fadeInRight delay-06s">
+							<h3>SEO optimized</h3>
+							<p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. </p>
+						</div>
+					</div>
+					<a class="Learn-More" href="#">Learn More</a>
+				</div>
+			</div>
+		</div>
+	</section>
+    {% endblock main_content %}
+	<!--main-section alabaster-end-->
+	<section class="main-section paddind" id="Portfolio">
+		<!--main-section-start-->
+		<div class="container">
+			<h2>Каталог</h2>
+			<div class="portfolioFilter">
+				<ul class="Portfolio-nav wow fadeIn delay-02s">
+					<li><a href="#" data-filter="*" class="current">Всі</a></li>  <!--All-->
+                    <li><a href="#" data-filter=".doors">Двері вхідні в будинок</a></li>  <!--Photography-->
+					<li><a href="#" data-filter=".branding">Двері вхідні в квартиру</a></li>  <!-- Branding-->
+					<li><a href="#" data-filter=".webdesign">Двері міжкімнатні</a></li> <!-- Web design -->
+					<li><a href="#" data-filter=".printdesign">Двері протипожежні</a></li>  <!-- Print design -->
+					<li><a href="#" data-filter=".photography">Двері в під'їзд</a></li>  <!--Photography-->
+                    <li><a href="#" data-filter=".photogr">Двері прихованого монтажу</a></li>  <!--Photography-->
+				</ul>
+			</div>
+		</div>
+		<div class="portfolioContainer wow fadeInUp delay-04s">
+            {% for prod in pr %}
+                {% if prod.availability %}
+                    {% if prod.group == 'Двері протипожежні' %}
+                        <div class="Portfolio-box printdesign">  <!--Двері протипожежні-->
+                            <a href="{{ prod.get_absolute_url }}"><img src="{{ prod.img.url }}" width="200" height="250" alt=""></a>
+                            <h3>
+                                <a href="{{ prod.get_absolute_url }}" style="color: #222222;">{{ prod.name }}</a>
+                            </h3>
+                            <p style="color:green; font-size:16px;">Ціна: {{ prod.price }} Грн.</p>
+<!--                            <h4><a href="{{ prod.get_absolute_url }}">Категорія: {{ prod.group }}</a></h4>-->
+                        </div>
+                    {% elif prod.group == 'Міжкімнатні двері' %}
+                        <div class="Portfolio-box webdesign">  <!--Двері міжкімнатні-->
+                            <a href="{{ prod.get_absolute_url }}"><img src="{{ prod.img.url }}" width="200" height="250" alt=""></a>
+                            <h3>
+                                <a href="{{ prod.get_absolute_url }}" style="color: #222222;">{{ prod.name }}</a>
+                            </h3>                            <p style="color:green; font-size:16px;">Ціна: {{ prod.price }} Грн.</p>
+<!--                            <h4>Категорія: {{ prod.group }}</h4>-->
+                        </div>
+                    {% elif prod.group == 'Двері вхідні в квартиру' %}
+                        <div class=" Portfolio-box branding">  <!--Двері вхідні в квартиру-->
+                            <a href="{{ prod.get_absolute_url }}"><img src="{{ prod.img.url }}" width="200" height="250" alt=""></a>
+                            <h3>
+                                <a href="{{ prod.get_absolute_url }}" style="color: #222222;">{{ prod.name }}</a>
+                            </h3>                            <p style="color:green; font-size:16px;">Ціна: {{ prod.price }} Грн.</p>
+<!--                            <h4>Категорія: {{ prod.group }}</h4>-->
+                        </div>
+                    {% elif prod.group == "Двері в під'їзд" %}
+                        <div class=" Portfolio-box photography"> <!--Двері в під'їзд-->
+                            <a href="{{ prod.get_absolute_url }}"><img src="{{ prod.img.url }}" width="200" height="250" alt=""></a>
+                            <h3>
+                                <a href="{{ prod.get_absolute_url }}" style="color: #222222;">{{ prod.name }}</a>
+                            </h3>                            <p style="color:green; font-size:16px;">Ціна: {{ prod.price }} Грн.</p>
+<!--                            <h4>Категорія: {{ prod.group }}</h4>-->
+                        </div>
+                    {% elif prod.group == 'Двері вхідні в будинок' %}
+                        <div class=" Portfolio-box doors"> <!-- Двері вхідні в будинок-->
+                            <a href="{{ prod.get_absolute_url }}"><img src="{{ prod.img.url }}" width="200" height="250" alt=""></a>
+                            <h3>
+                                <a href="{{ prod.get_absolute_url }}" style="color: #222222;">{{ prod.name }}</a>
+                            </h3>                            <p style="color:green; font-size:16px;">Ціна: {{ prod.price }} Грн.</p>
+<!--                            <h4>Категорія: {{ prod.group }}</h4>-->
+                        </div>
+                    {% elif prod.group == 'Прихований монтаж' %}
+                        <div class=" Portfolio-box photogr"> <!--Двері прихованого монтаж-->
+                            <a href="{{ prod.get_absolute_url }}"><img src="{{ prod.img.url }}" width="200" height="250" alt=""></a>
+                            <h3>
+                                <a href="{{ prod.get_absolute_url }}" style="color: #222222;">{{ prod.name }}</a>
+                            </h3>                            <p style="color:green; font-size:16px;">Ціна: {{ prod.price }} Грн.</p>
+<!--                            <h4>Категорія: {{ prod.group }}</h4>-->
+                        </div>
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+		</div>
+	</section>
+	<!--main-section-end-->
+    {% block client_ceo_part %}
+	<section class="main-section client-part" id="client">
+		<!--main-section client-part-start-->
+		<div class="container">
+			<b class="quote-right wow fadeInDown delay-03"><i class="fa fa-quote-right"></i></b>
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="client-part-haead wow fadeInDown delay-05">Було приємно працювати з хлопцями в компанії
+                        by Zelinskiy. Вони стежили, щоб ми були ситі та п’яні весь час=))</p>
+				</div>
+			</div>
+			<ul class="client wow fadeIn delay-05s">
+				<li><a href="#">
+            	<img src="{% static 'img/client-pic1.jpg' %}" alt="">
+                <h3>James Bond</h3>
+                <span>Якась інфа</span>
+            </a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="main-section team" id="team">
+		<!--main-section team-start-->
+		<div class="container">
+			<h2>Команда</h2>
+            <h6>Подивіться на нас, не команда - Орли!</h6>
+			<div class="team-leader-block clearfix">
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-03s">
+						<div class="team-leader-shadow"><a href="#"></a></div>
+						<img src="{% static 'img/sawka2.jpeg' %}" alt="">
+						<ul>
+							<li><a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a></li>
+							<li><a href="https://www.facebook.com/olexandr.tsarensky" target="_blank" class="fa fa-facebook"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-03s">сашкасашка</h3>
+					<span class="wow fadeInDown delay-03s">Product Manager</span>
+					<p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader  wow fadeInDown delay-06s">
+						<div class="team-leader-shadow"><a href="#"></a></div>
+						<img src="{% static 'img/oleksiy.jpg' %}" alt="">
+						<ul>
+							<li><a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a></li>
+							<li><a href="https://www.facebook.com/alexis.relax" target="_blank" class="fa fa-facebook"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-06s">льошкальошка</h3>
+					<span class="wow fadeInDown delay-06s">Chief Executive Officer</span>
+					<p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+				</div>
+				<div class="team-leader-box">
+					<div class="team-leader wow fadeInDown delay-09s">
+						<div class="team-leader-shadow"><a href="#"></a></div>
+						<img src="{% static 'img/romka.jpg' %}" alt="">
+						<ul>
+							<li><a href="https://twitter.com/" target="_blank" class="fa fa-twitter"></a></li>
+							<li><a href="https://www.facebook.com/roma.gusar" target="_blank" class="fa fa-facebook"></a></li>
+						</ul>
+					</div>
+					<h3 class="wow fadeInDown delay-09s">ромкаромка</h3>
+					<span class="wow fadeInDown delay-09s">Creative director</span>
+					<p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+    {% endblock client_ceo_part %}
+	<!--main-section team-end-->
+	<section class="business-talking">
+		<!--business-talking-start-->
+		<div class="container">
+			<h2>Давайте поговоримо про бізнес</h2>
+		</div>
+	</section>
+	<!--business-talking-end-->
+	<div class="container">
+		<section class="main-section contact" id="contact">
+
+			<div class="row">
+				<div class="col-lg-6 col-sm-7 wow fadeInLeft">
+					<div class="contact-info-box address clearfix">
+						<h3><i class="fa fa-map-marker"></i>Адреса:</h3>
+						<span>Україна, Львів<br>вул. Промислова 50/52.</span>
+					</div>
+					<div class="contact-info-box phone clearfix">
+						<h3><i class="fa fa-phone"></i>Номер:</h3>
+						<span>+3 8(077) 777-77-77</span>
+					</div>
+					<div class="contact-info-box email clearfix">
+						<h3><i class="fa fa-pencil"></i>email:</h3>
+						<span>test@email.com</span>
+					</div>
+					<div class="contact-info-box hours clearfix">
+						<h3><i class="fa fa-clock-o"></i>Графік:</h3>
+						<span><strong>Понеділок - П'ятниця:</strong> 10.00 - 17.00<br><strong>Субота:</strong> Зараз люди працюють по суботах?<br><strong>Неділя:</strong> Краше не запитувати.</span>
+					</div>
+					<ul class="social-link">
+						<li class="twitter"><a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a></li>
+						<li class="facebook"><a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-6 col-sm-5 wow fadeInUp delay-05s">
+					<div class="form">
+						<div id="sendmessage">Ваше повідомлення відправлено. Дякую!</div>
+						<div id="errormessage"></div>
+						<form action="" method="post" role="form" class="contactForm">
+							<div class="form-group">
+								<input type="text" name="name" class="form-control input-text" id="name" placeholder="Ваше Ім'я" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control input-text" name="email" id="email" placeholder="Ваш еmail" data-rule="email" data-msg="Please enter a valid email" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control input-text" name="subject" id="subject" placeholder="Тема" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+								<div class="validation"></div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control input-text text-area" name="message" rows="5" data-rule="required" data-msg="Опишіть Ваше запитання" placeholder="Повідомлення"></textarea>
+								<div class="validation"></div>
+							</div>
+							<div class="text-center"><button type="submit" class="input-btn">Відправити</button></div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+    {% endblock navigation_footer %}
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-logo"><a href="#"><img src="{% static 'img/footer-logo.png' %}" alt=""></a></div>
+			<span class="copyright">&copy; by Zelinskiy. All Rights Reserved</span>
+			<div class="credits">
+				<!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Knight
+        -->
+				Designed by <a href="https://bootstrapmade.com/">Bootstrap</a>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(e) {
+
+			$('#test').scrollToFixed();
+			$('.res-nav_click').click(function() {
+				$('.main-nav').slideToggle();
+				return false
+
+			});
+
+<!--    The image could not be loaded (popup message) -->
+
+<!--      $('.Portfolio-box').magnificPopup({-->
+<!--        delegate: 'a',-->
+<!--        type: 'image'-->
+<!--      });-->
+
+		});
+	</script>
+
+	<script>
+		wow = new WOW({
+			animateClass: 'animated',
+			offset: 100
+		});
+		wow.init();
+	</script>
+
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+			$('.main-nav li a, .servicelink').bind('click', function(event) {
+				var $anchor = $(this);
+
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top - 102
+				}, 1500, 'easeInOutExpo');
+				/*
+				if you don't want to use the easing effects:
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top
+				}, 1000);
+				*/
+				if ($(window).width() < 768) {
+					$('.main-nav').hide();
+				}
+				event.preventDefault();
+			});
+		})
+	</script>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+
+
+			var $container = $('.portfolioContainer'),
+				$body = $('body'),
+				colW = 375,
+				columns = null;
+
+
+			$container.isotope({
+				// disable window resizing
+				resizable: true,
+				masonry: {
+					columnWidth: colW
+				}
+			});
+
+			$(window).smartresize(function() {
+				// check if columns has changed
+				var currentColumns = Math.floor(($body.width() - 30) / colW);
+				if (currentColumns !== columns) {
+					// set new column count
+					columns = currentColumns;
+					// apply width to container manually, then trigger relayout
+					$container.width(columns * colW)
+						.isotope('reLayout');
+				}
+
+			}).smartresize(); // trigger resize to set container width
+			$('.portfolioFilter a').click(function() {
+				$('.portfolioFilter .current').removeClass('current');
+				$(this).addClass('current');
+
+				var selector = $(this).attr('data-filter');
+				$container.isotope({
+
+					filter: selector,
+				});
+				return false;
+			});
+		});
+	</script>
+</body>
+</html>

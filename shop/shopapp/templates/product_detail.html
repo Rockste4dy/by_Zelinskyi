@@ -1,0 +1,73 @@
+{% extends 'index.html' %}
+
+{% block navigation_footer %}
+<section class="main-section product detail">
+		<!--main-section alabaster-start-->
+		<div class="container">
+			<div class="row">
+				<figure class="col-lg-5 col-sm-4 wow fadeInLeft">
+					<img src="{{ pr.img.url }}" alt="">
+				</figure>
+				<div class="col-lg-7 col-sm-8 featured-work">
+					<h2>{{ pr.name }}</h2>
+					<div class="featured-box">
+<!--						<div class="featured-box-col1 wow fadeInRight delay-02s">-->
+<!--							<i class="fa fa-magic"></i>-->
+<!--						</div>-->
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+						<div class="featured-box-col2 wow fadeInRight delay-02s">
+							<h3>Категорія</h3>
+                            <h4>{{ pr.category }}</h4>
+						</div>
+					</div>
+					<div class="featured-box">
+<!--						<div class="featured-box-col1 wow fadeInRight delay-04s">-->
+<!--							<i class="fa fa-gift"></i>-->
+<!--						</div>-->
+						<div class="featured-box-col2 wow fadeInRight delay-04s">
+							<h3>Ціна</h3>
+							<p style="color:green; font-size:16px;">{{ pr.price }} грн.</p>
+						</div>
+					</div>
+					<div class="featured-box">
+
+					</div>
+				</div>
+			</div>
+            <hr>
+            <div class="container">
+                <h3>Опис:</h3>
+                <P class="padding-b">{{ pr.description }}.</P>
+                <br>
+                <h3>Комплектація:</h3>
+                <P class="padding-b">{{ pr.door_package }}.</P>
+                <br>
+                <h3>Розміри дверей:</h3>
+                <P class="padding-b">{{ pr.door_size }}.</P>
+                <br>
+                <h3>Дверне полотно:</h3>
+                <P class="padding-b">{{ pr.door_leaf }}.</P>
+                <br>
+                <h3>Поріг:</h3>
+                <P class="padding-b">{{ pr.threshold }}.</P>
+                <br>
+                <h3>Фурнітура:</h3>
+                <P class="padding-b">{{ pr.furniture }}.</P>
+                <br>
+                <h3>Покриття:</h3>
+                <P class="padding-b">{{ pr.coating }}.</P>
+            </div>
+		</div>
+	</section>
+<br>
+{% endblock navigation_footer %}
+
+<!--    door_package =  verbose_name='Комплектація', blank=True)-->
+<!--    door_size = ='Розміри дверей', blank=True)-->
+<!--    door_leaf =  verbose_name='Дверне полотно', blank=True)-->
+<!--    threshold =  verbose_name='Поріг', blank=True)-->
+<!--    furniture =  verbose_name='Фурнітура', blank=True)-->
+<!--    coating = verbose_name='Покриття', blank=True)-->
